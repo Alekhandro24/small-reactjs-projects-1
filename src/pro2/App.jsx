@@ -1,6 +1,10 @@
 import { Component } from "react";
 import Language from "./component/Language";
 import List from "./component/List";
+import { UseCompRef } from "./component/useCompRef";
+import Counter from "./component/Counter";
+import { Container } from "./App.styled";
+import Widget from "./component/Widget/Widget";
 
 class App extends Component {
   constructor() {
@@ -21,14 +25,18 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <Container>
         <Language />
         <ul>
           {this.state.data.map((item) => (
             <List data={item} />
           ))}
         </ul>
-      </div>
+
+        <UseCompRef />
+        <Counter />
+        <Widget />
+      </Container>
     );
   }
 }
