@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Work days",
+        "description": "To celebrate the launch of the new docs and, more importantly, to clearly separate the old and the new content, we have moved to the shorter react.dev domain. ",
+        "images": "images/WorkDays.jpg"
+    },
+    {
+        "title": "Montaines",
+        "description": "To celebrate the launch of the new docs and, more importantly, to clearly separate the old and the new content, we have moved to the shorter react.dev domain. ",
+        "images": "images/Montaines.png"
+    },
+    {
+        "title": "Sea coast",
+        "description": "To celebrate the launch of the new docs and, more importantly, to clearly separate the old and the new content, we have moved to the shorter react.dev domain. ",
+        "images": "images/SeaCoast.jpg"
+    },
+    {
+        "title": "Santorini",
+        "description": "To celebrate the launch of the new docs and, more importantly, to clearly separate the old and the new content, we have moved to the shorter react.dev domain. ",
+        "images": "images/Santorini.jpg"
+    },
+    {
+        "title": "Sea sky",
+        "description": "To celebrate the launch of the new docs and, more importantly, to clearly separate the old and the new content, we have moved to the shorter react.dev domain. ",
+        "images": "images/SeaSky.jpg"
+    },
+    {
+        "title": "Sea sky",
+        "description": "To celebrate the launch of the new docs and, more importantly, to clearly separate the old and the new content, we have moved to the shorter react.dev domain. ",
+        "images": "images/Screenshot_2.jpg"
+    },
+    {
+        "title": "Sea sky",
+        "description": "To celebrate the launch of the new docs and, more importantly, to clearly separate the old and the new content, we have moved to the shorter react.dev domain. ",
+        "images": "images/gh-pages.png"
+    }
+]
