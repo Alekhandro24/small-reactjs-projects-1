@@ -1,10 +1,13 @@
 import { Component } from "react";
-import Language from "./component/Language";
-import List from "./component/List";
-import { UseCompRef } from "./component/useCompRef";
-import Counter from "./component/Counter";
+// import Language from "./component/Language";
+// import List from "./component/List";
+// import { UseCompRef } from "./component/useCompRef";
+// import Counter from "./component/Counter";
 import { Container } from "./App.styled";
-import Widget from "./component/Widget/Widget";
+// import Widget from "./component/Widget/Widget";
+// import ModernCarousel from "./component/ModernCarousel/ModernCarousel";
+// import ReactScrolling from "./component/ReactScrolling/ReactScrolling";
+import { Parallax } from "./component/Parallax/Parallax";
 
 class App extends Component {
   constructor() {
@@ -26,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <Container>
-        <Language />
+        {/* <Language />
         <ul>
           {this.state.data.map((item) => (
             <List data={item} />
@@ -36,6 +39,10 @@ class App extends Component {
         <UseCompRef />
         <Counter />
         <Widget />
+        <ModernCarousel />
+        <ReactScrolling /> */}
+        {/* <Parallax /> */}
+        <Parallax />
       </Container>
     );
   }
