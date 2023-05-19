@@ -7,7 +7,8 @@ import { Container } from "./App.styled";
 // import Widget from "./component/Widget/Widget";
 // import ModernCarousel from "./component/ModernCarousel/ModernCarousel";
 // import ReactScrolling from "./component/ReactScrolling/ReactScrolling";
-import { Parallax } from "./component/Parallax/Parallax";
+// import { Parallax } from "./component/Parallax/Parallax";
+import { WavyRouter } from "./component/WavyRouter/WavyRouter";
 
 class App extends Component {
   constructor() {
@@ -42,7 +43,7 @@ class App extends Component {
         <ModernCarousel />
         <ReactScrolling /> */}
         {/* <Parallax /> */}
-        <Parallax />
+        <WavyRouter />
       </Container>
     );
   }
