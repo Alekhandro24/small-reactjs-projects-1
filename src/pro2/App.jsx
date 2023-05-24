@@ -4,13 +4,15 @@ import { Component } from "react";
 // import { UseCompRef } from "./component/useCompRef";
 // import Counter from "./component/Counter";
 import { Container } from "./App.styled";
+// import DataList from "./component/DataList/DataList";
+import MixTasks from "./component/MixTasks/MixTasks";
 // import Widget from "./component/Widget/Widget";
 // import ModernCarousel from "./component/ModernCarousel/ModernCarousel";
 // import ReactScrolling from "./component/ReactScrolling/ReactScrolling";
 // import { Parallax } from "./component/Parallax/Parallax";
 // import { WavyRouter } from "./component/WavyRouter/WavyRouter";
 // import ModalPopup from "./component/modalPopup/modalPopup";
-import ModalPopup2 from "./component/modalPopup2/modalPopup2";
+// import ModalPopup2 from "./component/modalPopup2/modalPopup2";
 
 class App extends Component {
   constructor() {
@@ -47,7 +49,9 @@ class App extends Component {
         {/* <Parallax /> */}
         {/* <WavyRouter /> */}
         {/* <ModalPopup /> */}
-        <ModalPopup2 />
+        {/* <ModalPopup2 /> */}
+        {/* <DataList /> */}
+        <MixTasks />
       </Container>
     );
   }
