@@ -1,8 +1,10 @@
 import { Component } from "react";
 import Header from "./Header/Header";
 // import Counter from "./Counter/Counter";
-// import Modal from "./Modal/Modal";
-import ToDoList from "./TodoList/TodoList";
+import Modal from "./Modal/Modal";
+import FormLogin from "./FormLogin/FormLogin";
+// import ToDoList from "./TodoList/TodoList";
+import { nanoid } from "nanoid";
 
 class MixTasks extends Component {
   state = {
@@ -16,22 +18,28 @@ class MixTasks extends Component {
     this.setState({ isShowModal: false });
   };
 
+  createUser = (data) => {
+    const newUser = {
+      ...data,
+      id: nanoid(),
+    };
+    console.log("newUser", newUser);
+  };
+
   render() {
     return (
       <div className="container">
         <Header showModal={this.showModal} />
-        <ToDoList />
+        {/* <ToDoList /> */}
         {/* <Counter /> */}
-        {/* {this.state.isShowModal && (
+        {this.state.isShowModal && (
           <Modal closeModal={this.closeModal}>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
-              dolorem itaque nihil tenetur illo sapiente minus modi maiores rem
-              quidem veritatis at magni dolore, dolorum perferendis! Repudiandae
-              molestias quia quis quam illum molestiae reprehenderit esse?
-            </p>
+            <FormLogin
+              createUser={this.createUser}
+              closeModal={this.closeModal}
+            />
           </Modal>
-        )} */}
+        )}
       </div>
     );
   }
