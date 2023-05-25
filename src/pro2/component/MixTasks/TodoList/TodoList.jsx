@@ -7,15 +7,23 @@ class ToDoList extends Component {
     todoList: todo,
   };
 
-  // handleCheckCompleted = (id) => {
-  //   this.setState((prevState) => {
-  //     return {
-  //       todoList: prevState.todoList.map((todo) =>
-  //         todo.id === id ? { ...todo, completed: !todo.completed } : todo
-  //       ),
-  //     };
-  //   });
-  // };
+  handleCheckCompleted = (id) => {
+    this.setState((prevState) => {
+      return {
+        todoList: prevState.todoList.map((todo) =>
+          todo.id === id ? { ...todo, completed: !todo.completed } : todo
+        ),
+      };
+    });
+  };
+
+  handleDelete = (id) => {
+    this.setState((prevState) => {
+      return {
+        todoList: prevState.todoList.filter((todo) => todo.id !== id),
+      };
+    });
+  };
 
   render() {
     return (
@@ -27,6 +35,7 @@ class ToDoList extends Component {
               key={todo.id}
               todo={todo}
               handleCheckCompleted={this.handleCheckCompleted}
+              handleDelete={this.handleDelete}
             />
           ))}
         </ul>
