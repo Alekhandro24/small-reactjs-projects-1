@@ -7,6 +7,10 @@ class FormLogin extends Component {
     isChecked: false,
   };
 
+  // componentDidMount() {
+  //   console.log("Mount");
+  // }
+
   handleChange = ({ target }) => {
     this.setState({
       [target.name]: target.value,
