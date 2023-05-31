@@ -3,7 +3,7 @@ import Header from "./Header/Header";
 // import Counter from "./Counter/Counter";
 import Modal from "./Modal/Modal";
 import FormLogin from "./FormLogin/FormLogin";
-// import ToDoList from "./TodoList/TodoList";
+import ToDoList from "./TodoList/TodoList";
 import { nanoid } from "nanoid";
 
 class MixTasks extends Component {
@@ -28,9 +28,12 @@ class MixTasks extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div
+        className="container"
+        style={{ backgroundColor: "white", height: "100vh" }}
+      >
         <Header showModal={this.showModal} />
-        {/* <ToDoList /> */}
+        <ToDoList />
         {/* <Counter /> */}
         {this.state.isShowModal && (
           <Modal closeModal={this.closeModal}>
