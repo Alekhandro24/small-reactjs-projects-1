@@ -1,14 +1,17 @@
 import { Component } from "react";
 import Header from "./Header/Header";
 // import Counter from "./Counter/Counter";
-import Modal from "./Modal/Modal";
-import FormLogin from "./FormLogin/FormLogin";
-import ToDoList from "./TodoList/TodoList";
+// import Modal from "./Modal/Modal";
+// import FormLogin from "./FormLogin/FormLogin";
+// import ToDoList from "./TodoList/TodoList";
 import { nanoid } from "nanoid";
+import Search from "./Search/Search";
+import ContentInfo from "./ContentInfo/ContetntInfo";
 
 class MixTasks extends Component {
   state = {
     isShowModal: false,
+    searchText: "",
   };
 
   showModal = () => {
@@ -26,6 +29,10 @@ class MixTasks extends Component {
     console.log("newUser", newUser);
   };
 
+  handleSearch = (searchText) => {
+    this.setState({ searchText });
+  };
+
   render() {
     return (
       <div
@@ -33,16 +40,18 @@ class MixTasks extends Component {
         style={{ backgroundColor: "white", height: "100vh" }}
       >
         <Header showModal={this.showModal} />
-        <ToDoList />
+        {/* <ToDoList /> */}
         {/* <Counter /> */}
-        {this.state.isShowModal && (
+        {/* {this.state.isShowModal && (
           <Modal closeModal={this.closeModal}>
             <FormLogin
               createUser={this.createUser}
               closeModal={this.closeModal}
             />
           </Modal>
-        )}
+        )} */}
+        <Search />
+        <ContentInfo searchText={this.state.searchText} />
       </div>
     );
   }
