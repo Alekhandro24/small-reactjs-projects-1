@@ -1,7 +1,33 @@
-import { Component } from "react";
+import { Component, PureComponent } from "react";
+
+// class Button extends Component {
+//   shouldComponentUpdate(nextProps, nextState) {
+//     if (nextProps.handleClickIncrement === this.props.handleClickIncrement)
+//       return false;
+//     return true;
+//   }
+class Button extends PureComponent {
+  shouldComponentUpdate(nextProps, nextState) {
+    if (
+      nextProps.handleClickIncrement === this.props.handleClickIncrement &&
+      nextProps.obj.name === this.props.obj.name
+    )
+      return false;
+    return true;
+  }
+  render() {
+    return (
+      <button
+        className="btn btn-outline-success me-5"
+        onClick={this.props.handleClickIncrement}
+      >
+        <i className="bi bi-plus-circle fs-1"></i>
+      </button>
+    );
+  }
+}
 
 //класовий компонент
-
 class Counter extends Component {
   state = {
     value: 0,
@@ -27,12 +53,13 @@ class Counter extends Component {
               {value}
             </p>
             <div className="d-flex justify-content-center px-5">
-              <button
+              {/* <button
                 className="btn btn-outline-success me-5"
                 onClick={this.handleClickIncrement}
               >
                 <i className="bi bi-plus-circle fs-1"></i>
-              </button>
+              </button> */}
+              <Button handleClickIncrement={this.handleClickIncrement} />
               <button
                 className="btn  btn-outline-danger ms-5"
                 onClick={this.handleClickDecrement}
