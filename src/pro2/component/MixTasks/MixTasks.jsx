@@ -50,7 +50,7 @@ class MixTasks extends Component {
             />
           </Modal>
         )} */}
-        <Search />
+        <Search handleSearch={this.handleSearch} />
         <ContentInfo searchText={this.state.searchText} />
       </div>
     );
