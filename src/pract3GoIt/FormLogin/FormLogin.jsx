@@ -82,9 +82,9 @@ class FormLogin extends Component {
             I agree
           </label>
         </div>
-        <div class="form-check">
+        <div className="form-check">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="radio"
             name="flexRadioDefault"
             id="flexRadioDefault1"
@@ -92,13 +92,13 @@ class FormLogin extends Component {
             onChange={this.handleRadio}
             value="male"
           />
-          <label class="form-check-label" for="flexRadioDefault1">
+          <label className="form-check-label" for="flexRadioDefault1">
             Male
           </label>
         </div>
-        <div class="form-check">
+        <div className="form-check">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="radio"
             name="flexRadioDefault"
             id="flexRadioDefault2"
@@ -106,7 +106,7 @@ class FormLogin extends Component {
             onChange={this.handleRadio}
             value="female"
           />
-          <label class="form-check-label" for="flexRadioDefault2">
+          <label className="form-check-label" for="flexRadioDefault2">
             Female
           </label>
         </div>
